@@ -1,0 +1,5 @@
+ - What happens if users choose “Cancel”? 
+The output would be "No"
+ - How to customize the options to users, e.g. only two options: “Yes” and “No”, OR “I do” and “I don’t”
+Use custom component with JOptionPane.showOptionDialog().
+the "options" parameter of JOptionPane.showOptionDialog() is used to achieve this.

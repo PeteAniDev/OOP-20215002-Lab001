@@ -1,7 +1,5 @@
 package _6;
 
-import java.io.ByteArrayInputStream;
-import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
 public class _6_6 {
@@ -30,9 +28,10 @@ public class _6_6 {
 			}
 		}
 
+		System.out.println("The sum of the two matrices is: ");
 		for (int i = 0; i < matrixHeight; i++) {
 			for (int j = 0; j < matrixWidth; j++) {
-				System.out.print(sumMatrix[j][i] + " ");
+				System.out.printf("%.2f ", sumMatrix[j][i]);
 			}
 			System.out.println();
 		}
