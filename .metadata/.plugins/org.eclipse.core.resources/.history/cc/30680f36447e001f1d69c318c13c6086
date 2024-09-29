@@ -1,0 +1,33 @@
+package _6;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class _6_5 {
+
+	private static Scanner scanner = new Scanner(System.in);
+
+	private static List<Integer> array = new ArrayList<Integer>();
+
+	public static void main(String[] args) {
+		System.out.println("Enter an array of integers.");
+		scan: do {
+			int n = scanner.nextInt();
+			if (array.isEmpty()) {
+				array.add(n);
+			} else {
+				for (int i = 0; i < array.size(); i++) {
+					if (n < array.get(i)) {
+						array.add(i, n);
+						continue scan;
+					}
+				}
+				array.add(n);
+			}
+		} while (scanner.hasNext());
+
+		System.out.println(array.toString());
+	}
+
+}

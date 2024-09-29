@@ -1,0 +1,19 @@
+package _6;
+
+import java.util.List;
+import java.util.Scanner;
+
+public class _6_5 {
+
+	private static Scanner scanner = new Scanner(System.in);
+
+	private static List<Integer> array = new ArrayList<Integer>();
+
+	public static void main(String[] args) {
+		System.out.println("Enter an array of integers.");
+		do {
+
+		} while (scanner.hasNext());
+	}
+
+}

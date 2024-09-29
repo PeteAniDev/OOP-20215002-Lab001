@@ -1,0 +1,30 @@
+package _6;
+
+import java.io.ByteArrayInputStream;
+import java.nio.charset.StandardCharsets;
+import java.util.Scanner;
+
+public class _6_6 {
+
+	private static Scanner scanner = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		System.out.println("Enter the two matrices width.");
+		int matrixWidth = scanner.nextInt();
+		System.out.println("Enter the two matrices height.");
+		int matrixHeight = scanner.nextInt();
+
+		System.out.println("Enter the first matrix.");
+		for (int i = 0; i < matrixHeight; i++) {
+			String a = scanner.nextLine();
+			Scanner lineReader = new Scanner(new ByteArrayInputStream(a.getBytes(StandardCharsets.UTF_8)));
+			int sum = 0;
+
+			do {
+				int n = lineReader.nextInt();
+			} while (scanner.hasNext());
+		}
+
+	}
+
+}

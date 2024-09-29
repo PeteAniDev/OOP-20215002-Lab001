@@ -1,0 +1,11 @@
+package _6;
+
+public class _6_5 {
+
+	private static Scanner scanner = new Scanner(System.in);
+
+	public static void main(String[] args) {
+
+	}
+
+}

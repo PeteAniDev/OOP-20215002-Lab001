@@ -1,0 +1,34 @@
+package _6;
+
+import java.io.ByteArrayInputStream;
+import java.nio.charset.StandardCharsets;
+import java.util.Scanner;
+
+public class _6_6 {
+
+	private static Scanner scanner = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		System.out.println("Enter the two matrices width.");
+		int matrixWidth = scanner.nextInt();
+		System.out.println("Enter the two matrices height.");
+		int matrixHeight = scanner.nextInt();
+		double[][] sumMatrix = new double[matrixWidth][matrixHeight];
+		for (int i = 0; i < matrixHeight; i++) {
+			for (int j = 0; j < matrixWidth; j++) {
+				sumMatrix[j][i] = 0;
+			}
+		}
+
+		System.out.println("Enter the first matrix.");
+		for (int i = 0; i < matrixHeight; i++) {
+			for (int j = 0; j < matrixWidth; j++) {
+				double n = lineReader.nextDouble();
+				sumMatrix[j][i] += n;
+			}
+		}
+
+		System.out.println(sumMatrix);
+	}
+
+}
