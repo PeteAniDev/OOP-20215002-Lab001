@@ -1,0 +1,31 @@
+package _2_2;
+
+import javax.swing.JOptionPane;
+
+public class _2_2_6 {
+
+	public static void main(String[] args) {
+		double a = readDouble("Please enter a for (ax + b = 0): ", "Input the first number");
+		double b = readDouble("Please enter b for (ax + b = 0): ", "Input the second number");
+
+		JOptionPane.showMessageDialog(null,
+				a == 0 ? (b == 0 ? "x can be any decimal number" : "There exists no solution for x")
+						: String.format("The solution for ax + b = 0 is: %.2f\n", -b / a),
+				"2.2.5", JOptionPane.INFORMATION_MESSAGE);
+		System.exit(0);
+	}
+
+	private static double readDouble(String msg, String title) {
+		double d = 0;
+		do {
+			try {
+				String n = JOptionPane.showInputDialog(null, msg, title, JOptionPane.INFORMATION_MESSAGE);
+				d = Double.parseDouble(n);
+			} catch (NumberFormatException e) {
+				continue;
+			}
+		} while (false);
+		return d;
+	}
+
+}

@@ -1,0 +1,31 @@
+package _2_2;
+
+import javax.swing.JOptionPane;
+
+public class _2_2_5 {
+
+	public static void main(String[] args) {
+		double a = readDouble("Please enter the first number: ", "Input the first number");
+		double b = readDouble("Please enter the second number: ", "Input the second number");
+
+		JOptionPane.showMessageDialog(null,
+				String.format("The sum of two number is: %.2f\n" + "The difference of two number is: %.2f\n"
+						+ "The difference of two number is: %.2f\n", a + b, Math.abs(a - b)),
+				"2.2.5", JOptionPane.INFORMATION_MESSAGE);
+		System.exit(0);
+	}
+
+	private static double readDouble(String msg, String title) {
+		double d = 0;
+		do {
+			try {
+				String n = JOptionPane.showInputDialog(null, msg, title, JOptionPane.INFORMATION_MESSAGE);
+				d = Double.parseDouble(n);
+			} catch (NumberFormatException e) {
+				continue;
+			}
+		} while (false);
+		return d;
+	}
+
+}

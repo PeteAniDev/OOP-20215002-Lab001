@@ -1,0 +1,19 @@
+package _2_2;
+
+import javax.swing.JOptionPane;
+
+public class _2_2_5 {
+
+	public static void main(String[] args) {
+		do {
+			String n1 = JOptionPane.showInputDialog(null, "Please enter the first number:", "Input the first number",
+					JOptionPane.INFORMATION_MESSAGE);
+		} while (true);
+		String n2 = JOptionPane.showInputDialog(null, "Please enter the second number:", "Input the second number",
+				JOptionPane.INFORMATION_MESSAGE);
+		JOptionPane.showMessageDialog(null, "You've just entered " + n1 + " and " + n2, "Show two numbers",
+				JOptionPane.INFORMATION_MESSAGE);
+		System.exit(0);
+	}
+
+}

@@ -1,0 +1,28 @@
+package _2_2;
+
+import javax.swing.JOptionPane;
+
+public class _2_2_5 {
+
+	public static void main(String[] args) {
+		double a = readDouble("Please enter the first number: ", "Input the first number");
+
+		JOptionPane.showMessageDialog(null, "You've just entered " + n1 + " and " + n2, "Show two numbers",
+				JOptionPane.INFORMATION_MESSAGE);
+		System.exit(0);
+	}
+
+	private static double readDouble(String msg, String title) {
+		double d = 0;
+		do {
+			try {
+				String n = JOptionPane.showInputDialog(null, msg, title, JOptionPane.INFORMATION_MESSAGE);
+				d = Double.parseDouble(n);
+			} catch (NumberFormatException e) {
+				continue;
+			}
+		} while (false);
+		return d;
+	}
+
+}
